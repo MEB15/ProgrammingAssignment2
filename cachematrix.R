@@ -1,7 +1,6 @@
 
 ## these functions are meant calculate and use a cached matrix inverse
 ## to avoid having to calculate the inverse every time it is needed
-
 ## makeCacheMatrix returns a list of functions for 
 ## 1) setting the value of a matix to a cached variable
 ## 2) getting the value of a matrix from a cached variable
