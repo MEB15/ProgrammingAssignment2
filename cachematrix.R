@@ -7,7 +7,6 @@
 ## 2) getting the value of a matrix from a cached variable
 ## 3) setting the value of the matix inverse to a cached variable
 ## 4) getting the value of the matrix inverse from a cached variable
-
 makeCacheMatrix <- function(x = matrix()) {
      inv <- NULL 
      #function to set the value of the matrix cached variable x
@@ -23,11 +22,8 @@ makeCacheMatrix <- function(x = matrix()) {
      getinv <- function() inv
      list(setx=setx, getx=getx, setinv=setinv, getinv=getinv)
 }
-
-
 ## cacheSolve checks for an existing cached matrix inverse value and returns
 ## if no cached value is present, it caclucates the invere and sets the cached value
-
 cacheSolve <- function(x, ...) {
         ## Return a matrix that is the inverse of 'x'
      inv <- x$getinv() #check for existing matrix inverse
